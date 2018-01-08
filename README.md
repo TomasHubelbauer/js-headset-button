@@ -7,21 +7,14 @@ Both Google's Android and Apple's iPhone provide programmatic ways for listening
 
 This is different from USB headsets, I am interested in headphones connected using a 2 or 3 pin Jack connector.
 
-I am curious to see if the same can be done in browser JavaScript. I doubt a direct API for this is exposed, although some arkane,
-no longer supported WebAudio API may support that in some headsets as an extended device capability. I can't use HID or BlueTooth
-in JavaScript (not in a meaningful way anyway), but I might be able to set an audio output device (the headphones) to act as if it
-was an audio input device (a microphone - but not as in "the headphones are really a headset with a microphone", but as in using
-the actual reproductor as a microphone). If this is possible using the WebAudio API, and assuming the button works by shorting one
-of or both of the channels to the ground, a difference in the levels may be a sufficient enough indicator of a button press and 
-release.
+I am curious to see if the same can be done in browser JavaScript. I doubt a direct API for this is exposed, although some arkane, no longer supported WebAudio API may support that in some headsets as an extended device capability. I can't use HID or BlueTooth in JavaScript (not in a meaningful way anyway), but I might be able to set an audio output device (the headphones) to act as if it was an audio input device (a microphone - but not as in "the headphones are really a headset with a microphone", but as in using the actual reproductor as a microphone). If this is possible using the WebAudio API, and assuming the button works by shorting one of or both of the channels to the ground, a difference in the levels may be a sufficient enough indicator of a button press and release.
 
 This repository is an experiment in exploring and exploiting the above.
 
 **[Live Web Audio Input Enabled!](https://developers.google.com/web/updates/2012/09/Live-Web-Audio-Input-Enabled)**
 
 The sample here shows how to use `getUserMedia` to grab a low latency audio input stream and set it as `AudioContext`'s source.
-The audio context then could I think be connected to a custom node which would dump the stream data for exploration and that could
-reveal a distinct pattern caused by the Jack button click.
+The audio context then could I think be connected to a custom node which would dump the stream data for exploration and that could reveal a distinct pattern caused by the Jack button click.
 
 **[Web Audio API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)**
 
@@ -35,3 +28,7 @@ Could show some way to process input audio in order to create a dumper and a pat
 
 - [Electronics SE explanation](https://electronics.stackexchange.com/a/38492/116328)
 - [Another one with diagrams](https://electronics.stackexchange.com/a/242885/116328)
+
+## Caveat
+
+This will likely works on devices with a dedicated, increasingly rare, microphone Jack input (enumerated as an input device), but won't work with devices which only have a Jack output. Even if that output could be switched to act as an input, it likely won't be possible to output audio and simultaneously listen for input at the same time. This works in native applications and there is no technical reason for it to be technically impossibly, can short the wires just fine, but the audio APIs likely won't be allow to express a single Jack connector as both input and output at the same time. Not on a cellphone with WebAudio.
