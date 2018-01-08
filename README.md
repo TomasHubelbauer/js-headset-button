@@ -1,6 +1,9 @@
 # JavaScript Headphones Button
 
-Both Google's Android and Apple's iPhone provide programmatic ways for listening for the headphones button press in an application.
+Both Google's Android and Apple's iPhone provide programmatic ways for listening for the headphones button press in an application:
+
+- [The Google API](https://stackoverflow.com/a/19543982/2715716)
+- [The Apple API](https://stackoverflow.com/a/15425324/2715716)
 
 This is different from USB headsets, I am interested in headphones connected using a 2 or 3 pin Jack connector.
 
