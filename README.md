@@ -16,3 +16,22 @@ of or both of the channels to the ground, a difference in the levels may be a su
 release.
 
 This repository is an experiment in exploring and exploiting the above.
+
+**[Live Web Audio Input Enabled!](https://developers.google.com/web/updates/2012/09/Live-Web-Audio-Input-Enabled)**
+
+The sample here shows how to use `getUserMedia` to grab a low latency audio input stream and set it as `AudioContext`'s source.
+The audio context then could I think be connected to a custom node which would dump the stream data for exploration and that could
+reveal a distinct pattern caused by the Jack button click.
+
+**[Web Audio API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)**
+
+A general overview of the API.
+
+**[Web Audio input example from the WebRTC WG](https://webrtc.github.io/samples/src/content/peerconnection/webaudio-input/)**
+
+Could show some way to process input audio in order to create a dumper and a pattern matcher.
+
+**Information about how the button over Jack works**
+
+- [Electronics SE explanation](https://electronics.stackexchange.com/a/38492/116328)
+- [Another one with diagrams](https://electronics.stackexchange.com/a/242885/116328)
