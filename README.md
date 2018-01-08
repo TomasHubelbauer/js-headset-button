@@ -37,3 +37,11 @@ Use an Android phone on the same network with a TRRS jack.
 | Jack         | TRRS    | Microphone input              |
 
 On the phone go to `http://`(computer-local-ip)`:8000`.
+
+## Contributing
+
+See the [development plan](doc/tasks.md).
+
+## Studying
+
+See the [development log](doc/notes.md).
