@@ -10,21 +10,30 @@ Both Google's Android and Apple's iPhone provide programmatic ways for listening
 - [The Google API](https://stackoverflow.com/a/19543982/2715716)
 - [The Apple API](https://stackoverflow.com/a/15425324/2715716)
 
-## Jack pinouts
-
-**3 conductor:**
-
-| Conductor | Channel   |
-|-----------|-----------|
-| *T*ip     | Left Out  |
-| *R*ing    | Right Out |
-| *S*leeve  | Ground    |
-
-**4 conductor:**
-
 | Conductor | Channel (Nokia) | Channel (Apple) |
 |-----------|-----------------|-----------------|
 | *T*ip     | Left Out        | Left Out        |
 | *R*ing    | Right Out       | Right Out       |
 | *R*ing    | Microphone In   | Ground          |
 | *S*leeve  | Ground          | Microphone In   |
+
+## Running
+
+| Prerequisite | Version | Purpose     |
+|--------------|---------|-------------|
+| Python       | 2.7     | HTTP Server |
+
+```sh
+python -m SimpleHTTPServer
+```
+
+## Testing
+
+Use an Android phone on the same network with a TRRS jack.
+
+| Prerequisite | Version | Purpose                       |
+|--------------|---------|-------------------------------|
+| Chrome       | 63      | `async`/`await`, WebAudio API |
+| Jack         | TRRS    | Microphone input              |
+
+On the phone go to `http://`(computer-local-ip)`:8000`.
