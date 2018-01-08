@@ -2,6 +2,6 @@
 
 > Development plan
 
-## Try out with an Android phone with Chrome with a required level of support
+## Log into the Google account on the Android phone and update Chrome
 
-## Document what control button presses do to the TTF values displayed
+## Try this out and document results
