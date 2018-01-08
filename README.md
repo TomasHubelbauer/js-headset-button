@@ -37,6 +37,9 @@ Use an Android phone on the same network with a TRRS jack.
 | Jack         | TRRS    | Microphone input              |
 
 On the phone go to `http://`(computer-local-ip)`:8000`.
+Use `chrome://inspect` to use Chrome DevTools on the phone.
+You may need to enable *Developer Mode* on the phone as well as USB debugging.
+Ensure you have up-to-date version of Chrome on the phone.
 
 ## Contributing
 
