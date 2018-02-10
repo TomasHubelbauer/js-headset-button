@@ -27,6 +27,8 @@ Both Google's Android and Apple's iPhone provide programmatic ways for listening
 python -m SimpleHTTPServer
 ```
 
+[On Bloggo](index.html)
+
 ## Testing
 
 Use an Android phone on the same network with a TRRS jack.
