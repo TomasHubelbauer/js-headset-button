@@ -50,10 +50,8 @@ Use `chrome://inspect` to use Chrome DevTools on the phone.
 You may need to enable *Developer Mode* on the phone as well as USB debugging.
 Ensure you have up-to-date version of Chrome on the phone.
 
-## Contributing
+## To-Do
 
-See the [development plan](doc/tasks.md).
+### Log into the Google account on the Android phone and update Chrome
 
-## Studying
-
-See the [development log](doc/notes.md).
+### Try this out and document results
