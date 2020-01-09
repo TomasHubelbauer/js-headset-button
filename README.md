@@ -17,12 +17,17 @@ Both Google's Android and Apple's iPhone provide programmatic ways for listening
 | *R*ing    | Microphone In   | Ground          |
 | *S*leeve  | Ground          | Microphone In   |
 
-**Findings:**
+## Findings
 
 [House of Marley Liberate XLBT - midnight](https://www.thehouseofmarley.com/liberate-xlbt-bluetooth-over-ear-headphones-midnight.html)
 with Google Chrome Android 64 do not show any specific pattern when pressing the headphone button.
 It appears as though the pulse is either too short to notice or the phones goes by the press-sound recording from the microphone matching.
 The phone is able to interpret the button press.
+
+This is most likely because the headset button is handled at the OS/soundcard level
+and the browser only gets the audio stream.
+
+https://electronics.stackexchange.com/a/242885/116328
 
 ## Running
 
